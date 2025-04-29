@@ -1,16 +1,15 @@
-def sumar(a, b):
-    """
-    Suma dos números.
+# Ejercicio: Sumar todos los elementos de una matriz
+matriz = [
+    [1, 2, 3],  # Fila 1
+    [4, 5, 0],  # Fila 2
+    [2, 2, 2]   # Fila 3
+]
 
-    Args:
-        a (int): Primer número.
-        b (int): Segundo número.
+suma_total = 0
 
-    Returns:
-        int: La suma de a y b.
-    """
-    return a + b
+for fila in matriz:
+    
+    for elemento in fila:
+        suma_total += elemento
 
-
-
-print(sumar(3,5))
+print("La suma de todos los elementos de la matriz es:", suma_total)
